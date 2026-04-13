@@ -33,15 +33,16 @@ namespace nombre_magique
                 Console.WriteLine();
                 Console.Write("Rentrez votre un nombre : ");
                 string str_num = Console.ReadLine();
-                //num = int.Parse(str_num);
+                num = int.Parse(str_num);
                 Console.WriteLine("tu as choisi le nombre " + num);
 
                 try
                 {
 
-                    // Identifie le string en en Integer et donc il peut etre une condition pour suprimer les strings
                     //num_min = int.Parse(str_num_min);
                     //num_max = int.Parse(str_num_max);
+                    
+                    // Identifie le string en en Integer et donc peut etre une condition pour suprimer les strings
                     num = int.Parse(str_num);
 
                     // Considérer que 0 est invalide
@@ -53,13 +54,17 @@ namespace nombre_magique
                     {
                         Console.WriteLine("Erreur : Ton nombre min est plus grand que le max ");
                     }
-                    else if (num < 0)
+                    else if ((num < 0) || (num_min < 0) || (num_max < 0))
                     {
                         Console.WriteLine("Erreur : Tu ne peux pas utiliser de nombre négatif ");
                     }
-                    else if (num_min < num_max)
+                    else if (num > num_max)
                     {
-                        Console.WriteLine("Erreur : Ton nombre min est plus grand que le max ");
+                        Console.WriteLine("Erreur : Tu es au dessus de la valeur " + num_max);
+                    }
+                    else if (num < num_min)
+                    {
+                        Console.WriteLine("Erreur : Tu es en dessous de la valeur " + num_min);
                     }
                     else // retourner la valeur validé (int)
                     {
@@ -69,9 +74,7 @@ namespace nombre_magique
 
                 catch
                 {
-                    Console.WriteLine("Tu n'a pas écri de nombre mais : " + num);
-                    Console.WriteLine(" Pour ton nombre min, tu n'a pas écri de nombre mais : " + num_min);
-                    Console.WriteLine(" Pour ton nombre max, tu n'a pas écri de nombre mais : " + num_max);
+                    Console.WriteLine("Tu n'a pas écri de nombre mais : " + num);                    
                 }
             }
             return num;
