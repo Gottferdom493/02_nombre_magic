@@ -1,0 +1,15 @@
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\bin\Debug\net8.0\02_nombre_magic.exe
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\bin\Debug\net8.0\02_nombre_magic.deps.json
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\bin\Debug\net8.0\02_nombre_magic.runtimeconfig.json
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\bin\Debug\net8.0\02_nombre_magic.dll
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\bin\Debug\net8.0\02_nombre_magic.pdb
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.AssemblyInfoInputs.cache
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.AssemblyInfo.cs
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.csproj.CoreCompileInputs.cache
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.sourcelink.json
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.dll
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\refint\02_nombre_magic.dll
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.pdb
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\02_nombre_magic.genruntimeconfig.cache
+D:\VisualStudio\C#\01_Exercices\02_nombre_magic\02_nombre_magic\obj\Debug\net8.0\ref\02_nombre_magic.dll
