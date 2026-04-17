@@ -14,17 +14,17 @@ namespace nombre_magique
             int num_min = 0;
             int num_max = 0;
 
-            while (num <= 0)
+            while ((num >= num_min) || (num <= num_max))
             {
 
                 Console.WriteLine();
-                Console.Write("Choisiser le nombre min : ");
+                Console.Write("Choisiser le nombre MINIMUM : ");
                 string str_num_min = Console.ReadLine();
                 num_min = int.Parse(str_num_min);
                 Console.WriteLine("tu as choisi le nombre " + num_min);
 
                 Console.WriteLine();
-                Console.Write("Choisiser le nombre max : ");
+                Console.Write("Choisiser le nombre MAXIMUM : ");
                 string str_num_max = Console.ReadLine();
                 num_max = int.Parse(str_num_max);
                 Console.WriteLine("tu as choisi le nombre " + num_max);
@@ -34,7 +34,7 @@ namespace nombre_magique
                 Console.Write("Rentrez votre un nombre : ");
                 string str_num = Console.ReadLine();
                 num = int.Parse(str_num);
-                Console.WriteLine("tu as choisi le nombre " + num);
+                Console.WriteLine("Tu as choisi le nombre " + num);
 
                 try
                 {
@@ -50,21 +50,25 @@ namespace nombre_magique
                     {
                         Console.WriteLine("Erreur : Tu ne peux pas utiliser le 0 ");
                     }
-                    else if (num_min > num_max)
-                    {
-                        Console.WriteLine("Erreur : Ton nombre min est plus grand que le max ");
-                    }
                     else if ((num < 0) || (num_min < 0) || (num_max < 0))
                     {
                         Console.WriteLine("Erreur : Tu ne peux pas utiliser de nombre négatif ");
                     }
-                    else if (num > num_max)
+                    else if ((num >= num_min) && (num <= num_max))
                     {
-                        Console.WriteLine("Erreur : Tu es au dessus de la valeur " + num_max);
+                        Console.WriteLine(num + "est bien compris entre les valeurs " + num_min + " et " + num_max);
+                    }
+                    else if (num_min > num_max)
+                    {
+                        Console.WriteLine("Erreur : Ton nombre min est plus grand que le max ");
                     }
                     else if (num < num_min)
                     {
-                        Console.WriteLine("Erreur : Tu es en dessous de la valeur " + num_min);
+                        Console.WriteLine("Erreur : Tu es en-dessous de la valeur " + num_min);
+                    }
+                    else if (num > num_max)
+                    {
+                        Console.WriteLine("Erreur : Tu es au-dessus de la valeur " + num_max);
                     }
                     else // retourner la valeur validé (int)
                     {
